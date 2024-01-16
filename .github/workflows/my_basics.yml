@@ -1,0 +1,30 @@
+#----------------------------
+# Github Action PArt-1 - Basics
+#
+# Copyleft (c) by Pavel Vasilev 2024
+
+name : My-GithubActions-Basics 
+
+on: 
+push:
+branches:
+- master
+
+
+jobs:
+ my_testing:
+ runs-on: ubuntu-latest
+
+  steps:
+  - name: Print Hello Messega
+  run:  echo "Hello world from testing"
+  
+ my_deploy:
+ runs-on: ubuntu-latest 
+ steps:
+ -name: Print Hello Message
+ run: echo "Hello world from Deploy job"
+
+
+ 
+    
