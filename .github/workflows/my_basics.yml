@@ -19,9 +19,11 @@ jobs:
  run: echo "Hello world from testing"
   
  my_deploy:
- steps:
-  - name: Print Hello Message
- run: echo "Hello world from Deploy job"
+ runs-on: ubuntu-latest
+  steps:
+   - name: Pring Hello Message
+   run: echo "Hello world from deploy"
+ 
 
 
  
