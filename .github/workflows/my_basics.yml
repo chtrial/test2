@@ -19,7 +19,6 @@ jobs:
  run: echo "Hello world from testing"
   
  my_deploy:
- runs-on: ununtu-latest
  steps:
   - name: Print Hello Message
  run: echo "Hello world from Deploy job"
