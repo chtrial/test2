@@ -30,6 +30,12 @@ jobs:
         
    - name: List current folder
      run: ls -la
+     
+   - name: Git clone my repo
+     uses: actions/checkout@v1
+   
+   - name: List current folder
+     run: ls -la
         
 
  my_deploy:
@@ -38,6 +44,15 @@ jobs:
 
    steps:
    - name: Print Hello Message in Deploy
-     run: echo "Hello world from Deploy job"   
+     run: echo "Hello world from Deploy job" 
+     
    - name: Printing Deployment package  
      run : echo "Deploy package name is ${{ env.DEPLOY_PACKAGE_NAME  }}"
+     
+   - name: Lets test our packages if they are here 1
+     run : aws --version
+     
+   - name: Lets test our packages if they are here 2
+     run : zip
+     
+     
