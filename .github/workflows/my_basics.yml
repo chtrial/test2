@@ -8,7 +8,7 @@ name : My-GithubActions-Basics
     
 on: 
   push:
-   branch:
+   branches:
       - master
 
 
@@ -16,7 +16,7 @@ jobs:
  my_testing:
    runs-on: ubuntu-latest
    steps:
-   - name: Print Hello Message
+   - name: Vopros
      run: echo "Who is the good girl?"
 
  my_deploy:
@@ -24,5 +24,5 @@ jobs:
    needs: [my_testing]
 
    steps:
-   - name: Print Hello Message in Deploy
+   - name: Otvet
      run: echo "YOU ARE THE GOOD GIRL"     
