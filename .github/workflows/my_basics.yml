@@ -6,17 +6,17 @@
 name : My-GithubActions-Basics 
 
 on: 
-push:
-branches:
-- master
+  push:
+    branch:
+      - master
 
 
 jobs:
  my_testing:
- runs-on: ubuntu-latest
- steps:
-  - name: Print Hello Message
- run: echo "Hello world from testing"
+   runs-on: ubuntu-latest
+   steps:
+   - name: Print Hello Message
+     run: echo "Hello world from testing"
   
 
 
