@@ -8,7 +8,7 @@ name : My-GithubActions-Basics
     
 on: 
   push:
-   branches:
+   branch:
       - master
 
 
