@@ -21,10 +21,7 @@ jobs:
    steps:
    - name: Print Hello Message
      run: echo "Who is the good girl?"
-   - name: Execute few commands
-     run : |
-       echo "Hello Message1"
-       echo "Hello Message2"
+
  my_deploy:
    runs-on: ubuntu-latest
    needs: [my_testing]
