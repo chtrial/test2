@@ -16,7 +16,14 @@ jobs:
    runs-on: ubuntu-latest
    steps:
    - name: Print Hello Message
-     run: echo "Hello world from testing"
+     run: echo "Who is the good girl?"
+ my_deploy:
+   runs-on: ubuntu-latest
+   needs: [mymy_testing]
+
+   steps:
+   - name: Print Hello Message in Deploy
+   run: echo "YOU ARE THE GOOD GIRL"
   
 
 
